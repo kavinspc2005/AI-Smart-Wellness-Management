@@ -1,0 +1,1178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8faf9;
+}
+
+
+/* Navbar */
+
+.navbar-brand {
+    color: #198754;
+}
+
+.navbar-brand i {
+    margin-right: 6px;
+}
+
+
+/* Hero */
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #f0fff7,
+        #ffffff
+    );
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+
+/* Wellness Card */
+
+.wellness-card {
+    background: white;
+    padding: 50px 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.wellness-icon {
+    font-size: 80px;
+    color: #198754;
+}
+
+.feature-icon {
+    display: block;
+    font-size: 28px;
+    color: #198754;
+    margin-bottom: 5px;
+}
+
+
+/* Feature Cards */
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+.feature-card h5 {
+    font-weight: bold;
+}
+
+.feature-card p {
+    color: #6c757d;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #198754;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+    background-color: #f4f9f6;
+    min-height: 100vh;
+}
+
+
+/* Auth Section */
+
+.auth-section {
+    padding: 60px 0;
+}
+
+
+/* Auth Card */
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Auth Icon */
+
+.auth-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #e8f7ef;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-icon i {
+    font-size: 32px;
+    color: #198754;
+}
+
+
+/* Input */
+
+.input-group-text {
+    background-color: #f8f9fa;
+    color: #198754;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+
+/* Button */
+
+.auth-card .btn-success {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   PROFILE PAGE
+========================= */
+
+.section-title {
+    color: #198754;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.form-label {
+    font-weight: 600;
+}
+
+
+.form-select {
+    padding: 12px;
+}
+
+
+.bmi-result {
+    background-color: #f0fff7;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid #d8f3e5;
+}
+
+
+.bmi-icon {
+    font-size: 40px;
+    color: #198754;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-page {
+    background-color: #f5f9f7;
+}
+
+
+.dashboard-section {
+    padding: 40px 0;
+}
+
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    height: 100%;
+}
+
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+
+    background-color: #e8f7ef;
+
+    color: #198754;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.dashboard-card h3 {
+    font-weight: 700;
+}
+
+
+.quick-action {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+
+    background-color: #f8faf9;
+
+    text-decoration: none;
+
+    color: #212529;
+
+    transition: 0.3s;
+}
+
+
+.quick-action:hover {
+    background-color: #e8f7ef;
+
+    transform: translateX(5px);
+}
+
+
+.quick-action > i:first-child {
+    font-size: 25px;
+
+    color: #198754;
+}
+
+
+.quick-action strong,
+.quick-action small {
+    display: block;
+}
+
+
+.quick-action small {
+    color: #6c757d;
+
+    margin-top: 3px;
+}
+
+
+.tip-item {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    background-color: #f8faf9;
+
+    border-radius: 12px;
+
+    height: 100%;
+}
+
+
+.tip-item > i {
+    font-size: 25px;
+
+    color: #198754;
+}
+
+
+.tip-item p {
+    color: #6c757d;
+
+    margin: 5px 0 0;
+}
+
+
+
+/* =========================
+   DIET PAGE
+========================= */
+
+.meal-card {
+    transition: 0.3s;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.meal-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8f7ef;
+    color: #198754;
+
+    border-radius: 12px;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+.workout-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    background-color: #f8faf9;
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+.workout-item > i {
+    font-size: 25px;
+    color: #198754;
+}
+
+
+.workout-item p {
+    margin: 3px 0 0;
+    color: #6c757d;
+}
+
+
+.water-box {
+    background-color: #f0fff7;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+
+.water-icon {
+    font-size: 50px;
+    color: #198754;
+}
+
+
+
+
+/* =========================
+   REMINDERS
+========================= */
+
+.reminder-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background-color: #f8faf9;
+
+    border-radius: 12px;
+}
+
+
+.reminder-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e8f7ef;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+}
+
+
+.reminder-info {
+    flex: 1;
+}
+
+
+.reminder-info strong {
+    display: block;
+
+    font-size: 17px;
+}
+
+
+.reminder-info small {
+    color: #6c757d;
+
+    display: block;
+
+    margin-top: 3px;
+}
+
+/* =========================
+   DIET HISTORY
+========================= */
+
+.history-info {
+    background-color: #f8faf9;
+
+    padding: 15px;
+
+    border-radius: 12px;
+}
+
+
+.history-info small {
+    display: block;
+
+    color: #6c757d;
+
+    margin-bottom: 5px;
+}
+
+
+.history-info strong {
+    display: block;
+
+    color: #198754;
+}
+
+
+.history-meal {
+    background-color: #f8faf9;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    height: 100%;
+}
+
+
+.history-meal > i {
+    display: block;
+
+    font-size: 25px;
+
+    color: #198754;
+
+    margin-bottom: 10px;
+}
+
+
+.history-meal strong {
+    display: block;
+}
+
+
+.history-meal p {
+    color: #6c757d;
+
+    margin-top: 8px;
+
+    margin-bottom: 0;
+}
+
+
+
+/* =========================
+   WATER TRACKER
+========================= */
+
+.water-tracker-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8f7ef;
+
+    color: #198754;
+
+    border-radius: 50%;
+
+    font-size: 45px;
+}
+
+
+#waterProgress {
+    transition: width 0.5s ease;
+}
+
+
+/* =========================
+   WORKOUT TRACKER
+========================= */
+
+.workout-stat-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8f7ef;
+
+    color: #198754;
+
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+
+.workout-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background-color: #f8faf9;
+
+    border-radius: 12px;
+}
+
+
+.workout-item-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8f7ef;
+
+    border-radius: 12px;
+
+    font-size: 24px;
+}
+
+
+.workout-item-info {
+    flex: 1;
+}
+
+
+.workout-item-info strong {
+    display: block;
+}
+
+
+.workout-item-info small {
+    color: #6c757d;
+}
+
+
+/* =========================
+   HEALTH PROGRESS
+========================= */
+
+#weightChart,
+#bmiChart {
+    max-height: 300px;
+}
+
+
+.progress-record {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background-color: #f8faf9;
+
+    border-radius: 12px;
+}
+
+
+.progress-record-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e8f7ef;
+
+    color: #198754;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+}
+
+
+.progress-record-info {
+    flex: 1;
+}
+
+
+.progress-record-info strong {
+    display: block;
+}
+
+
+.progress-record-info small {
+    color: #6c757d;
+}
+
+
+/* =========================
+   NOTIFICATIONS
+========================= */
+
+.notification-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    background-color: #f8faf9;
+
+    border-radius: 14px;
+
+    border-left: 4px solid #198754;
+
+    transition: 0.3s;
+
+}
+
+
+.notification-item:hover {
+
+    transform: translateX(4px);
+
+}
+
+
+.notification-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e8f7ef;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+}
+
+
+.notification-content {
+
+    flex: 1;
+
+}
+
+
+.notification-content strong {
+
+    display: block;
+
+    font-size: 16px;
+
+}
+
+
+.notification-content small {
+
+    display: block;
+
+    color: #6c757d;
+
+    margin-top: 4px;
+
+}
+
+
+.notification-done {
+
+    opacity: 0.6;
+
+    border-left-color: #adb5bd;
+
+}
+
+
+.notification-done .notification-icon {
+
+    background-color: #e9ecef;
+
+}
+
+/* =========================
+   SETTINGS
+========================= */
+
+.bmi-preview {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    background-color: #f0fff7;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+}
+
+
+.bmi-preview h3,
+.bmi-preview h5 {
+
+    color: #198754;
+
+    margin-top: 5px;
+
+}
+
+
+@media (max-width: 576px) {
+
+    .bmi-preview {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #f1f1f1 !important;
+}
+
+
+.dark-mode .dashboard-card {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+
+.dark-mode .text-muted {
+    color: #adb5bd !important;
+}
+
+
+.dark-mode .quick-action,
+.dark-mode .tip-item,
+.dark-mode .workout-item,
+.dark-mode .reminder-item,
+.dark-mode .notification-item,
+.dark-mode .history-info,
+.dark-mode .history-meal {
+    background-color: #292929;
+    color: #f1f1f1;
+}
+
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background-color: #292929;
+    color: #f1f1f1;
+    border-color: #555;
+}
+
+
+.dark-mode .form-control::placeholder {
+    color: #aaa;
+}
+
+
+.dark-mode .form-select option {
+    background-color: #292929;
+    color: #fff;
+}
+
+
+.dark-mode .water-box,
+.dark-mode .bmi-preview {
+    background-color: #263b31;
+}
+
+
+.theme-toggle {
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    z-index: 9999;
+
+    background-color: white;
+}
+
+
+/* =========================
+   HEALTH REPORT
+========================= */
+
+.report-info {
+
+    background-color: #f8faf9;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+}
+
+
+.report-info small {
+
+    display: block;
+
+    color: #6c757d;
+
+    margin-bottom: 5px;
+
+}
+
+
+.report-info strong {
+
+    display: block;
+
+    color: #198754;
+
+}
+
+
+.report-meal {
+
+    background-color: #f8faf9;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    height: 100%;
+
+}
+
+
+.report-meal strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+}
+
+
+.report-meal p {
+
+    color: #6c757d;
+
+    margin-bottom: 0;
+
+}
+
+
+@media print {
+
+    .navbar,
+    #downloadReport {
+
+        display: none !important;
+
+    }
+
+}
+
+
+
+/* =========================
+   AI WELLNESS
+========================= */
+
+.ai-result {
+
+    padding-top: 10px;
+
+    border-top: 1px solid #dee2e6;
+
+}
+
+
+.ai-result-card {
+
+    background-color: #f8faf9;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    height: 100%;
+
+    border-left: 4px solid #198754;
+
+}
+
+
+.ai-result-card h6 {
+
+    color: #198754;
+
+    margin-bottom: 10px;
+
+}
+
+
+.ai-result-card p {
+
+    color: #6c757d;
+
+    margin-bottom: 0;
+
+    line-height: 1.6;
+
+}
+
+
+/* Dark mode */
+
+.dark-mode .ai-result {
+
+    border-top-color: #444;
+
+}
+
+
+.dark-mode .ai-result-card {
+
+    background-color: #292929;
+
+}
+
+
+.dark-mode .ai-result-card p {
+
+    color: #adb5bd;
+
+}
+
+
+
+/* =========================
+   HOME PAGE WELLNESS HERO
+========================= */
+
+.hero-section {
+    position: relative;
+    min-height: 670px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(240, 255, 248, 0.96) 0%,
+            rgba(240, 255, 248, 0.82) 42%,
+            rgba(240, 255, 248, 0.25) 100%
+        ),
+        url("../images/wellness-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* =========================
+   ACTIVE NAVIGATION
+========================= */
+
+.navbar .nav-link {
+    color: #333;
+    transition: 0.3s;
+}
+
+
+/* Current page */
+
+.navbar .nav-link.active {
+    color: red !important;
+    font-weight: 600;
+}
+
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+/* Dashboard cards */
+
+.dashboard-card {
+    transition: all 0.3s ease;
+}
+
+
+/* Mouse hover */
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid #198754;
+}
+
+
+/* Quick action hover */
+
+.quick-action {
+    transition: all 0.3s ease;
+}
+
+
+.quick-action:hover {
+    transform: translateX(5px);
+
+    background-color: #e9f8f0;
+
+    box-shadow:
+        0 5px 15px rgba(25, 135, 84, 0.15);
+}
+
+
+/* Button hover */
+
+.btn {
+    transition: all 0.25s ease;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.15);
+}

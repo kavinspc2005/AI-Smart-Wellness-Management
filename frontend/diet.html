@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Diet Planner - AI Smart Wellness</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold text-success"
+           href="dashboard.html">
+
+            <i class="bi bi-heart-pulse"></i>
+
+            AI Smart Wellness
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="diet.html">
+                        Diet Plan
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="reminders.html">
+                        Reminders
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="history.html">
+                        History
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= DIET SECTION ================= -->
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+
+        <!-- Header -->
+
+        <div class="mb-4">
+
+            <span class="badge bg-success-subtle text-success">
+                <i class="bi bi-stars"></i>
+                AI Powered
+            </span>
+
+            <h2 class="fw-bold mt-2">
+
+                Your Personalized Diet Plan
+
+            </h2>
+
+            <p class="text-muted">
+
+                A wellness plan based on your health profile,
+                goals and food preferences.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- ================= USER SUMMARY ================= -->
+
+        <div class="dashboard-card mb-4">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-3">
+
+                    <p class="text-muted mb-1">
+                        User
+                    </p>
+
+                    <h5 id="dietUser">
+                        --
+                    </h5>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <p class="text-muted mb-1">
+                        BMI
+                    </p>
+
+                    <h5 id="dietBMI">
+                        --
+                    </h5>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <p class="text-muted mb-1">
+                        Health Category
+                    </p>
+
+                    <h5 id="dietCategory">
+                        --
+                    </h5>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <p class="text-muted mb-1">
+                        Goal
+                    </p>
+
+                    <h5 id="dietGoal">
+                        --
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= MEAL PLAN ================= -->
+
+        <h4 class="fw-bold mb-3">
+
+            <i class="bi bi-egg-fried text-success me-2"></i>
+
+            Today's Meal Plan
+
+        </h4>
+
+
+        <div class="row g-4 mb-5">
+
+
+            <!-- Breakfast -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="dashboard-card meal-card">
+
+                    <div class="meal-icon">
+
+                        <i class="bi bi-sunrise"></i>
+
+                    </div>
+
+                    <span class="text-success fw-semibold">
+                        08:00 AM
+                    </span>
+
+                    <h5 class="fw-bold mt-2">
+                        Breakfast
+                    </h5>
+
+                    <p id="breakfastMeal"
+                       class="text-muted">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Lunch -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="dashboard-card meal-card">
+
+                    <div class="meal-icon">
+
+                        <i class="bi bi-sun"></i>
+
+                    </div>
+
+                    <span class="text-success fw-semibold">
+                        01:00 PM
+                    </span>
+
+                    <h5 class="fw-bold mt-2">
+                        Lunch
+                    </h5>
+
+                    <p id="lunchMeal"
+                       class="text-muted">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Snack -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="dashboard-card meal-card">
+
+                    <div class="meal-icon">
+
+                        <i class="bi bi-apple"></i>
+
+                    </div>
+
+                    <span class="text-success fw-semibold">
+                        04:30 PM
+                    </span>
+
+                    <h5 class="fw-bold mt-2">
+                        Evening Snack
+                    </h5>
+
+                    <p id="snackMeal"
+                       class="text-muted">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Dinner -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="dashboard-card meal-card">
+
+                    <div class="meal-icon">
+
+                        <i class="bi bi-moon-stars"></i>
+
+                    </div>
+
+                    <span class="text-success fw-semibold">
+                        08:00 PM
+                    </span>
+
+                    <h5 class="fw-bold mt-2">
+                        Dinner
+                    </h5>
+
+                    <p id="dinnerMeal"
+                       class="text-muted">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= WORKOUT + WATER ================= -->
+
+        <div class="row g-4 mb-4">
+
+
+            <!-- Workout -->
+
+            <div class="col-lg-6">
+
+                <div class="dashboard-card">
+
+                    <h5 class="fw-bold mb-4">
+
+                        <i class="bi bi-person-walking text-success me-2"></i>
+
+                        Recommended Workout
+
+                    </h5>
+
+
+                    <div class="workout-item">
+
+                        <i class="bi bi-walking"></i>
+
+                        <div>
+
+                            <strong>
+                                Daily Walking
+                            </strong>
+
+                            <p>
+                                30 minutes
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="workout-item">
+
+                        <i class="bi bi-lightning"></i>
+
+                        <div>
+
+                            <strong>
+                                Strength Training
+                            </strong>
+
+                            <p>
+                                15–20 minutes
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="workout-item">
+
+                        <i class="bi bi-heart-pulse"></i>
+
+                        <div>
+
+                            <strong>
+                                Stretching
+                            </strong>
+
+                            <p>
+                                10 minutes
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Water -->
+
+            <div class="col-lg-6">
+
+                <div class="dashboard-card">
+
+                    <h5 class="fw-bold mb-4">
+
+                        <i class="bi bi-droplet text-success me-2"></i>
+
+                        Daily Water Goal
+
+                    </h5>
+
+
+                    <div class="water-box text-center">
+
+                        <i class="bi bi-droplet-fill water-icon"></i>
+
+                        <h2 class="fw-bold mt-2">
+                            8 Glasses
+                        </h2>
+
+                        <p class="text-muted">
+                            Approximately 2–2.5 litres per day
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= HEALTH TIPS ================= -->
+
+        <div class="dashboard-card mb-4">
+
+            <h5 class="fw-bold mb-4">
+
+                <i class="bi bi-lightbulb text-success me-2"></i>
+
+                AI Wellness Tips
+
+            </h5>
+
+
+            <div class="row g-3">
+
+
+                <div class="col-md-4">
+
+                    <div class="tip-item">
+
+                        <i class="bi bi-droplet"></i>
+
+                        <div>
+
+                            <strong>
+                                Stay Hydrated
+                            </strong>
+
+                            <p>
+                                Drink water regularly throughout
+                                the day.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="tip-item">
+
+                        <i class="bi bi-basket2"></i>
+
+                        <div>
+
+                            <strong>
+                                Eat Balanced Meals
+                            </strong>
+
+                            <p>
+                                Include vegetables, protein and
+                                healthy carbohydrates.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="tip-item">
+
+                        <i class="bi bi-moon-stars"></i>
+
+                        <div>
+
+                            <strong>
+                                Sleep Well
+                            </strong>
+
+                            <p>
+                                Maintain a consistent sleep schedule.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Save Button -->
+
+        <div class="text-end">
+
+            <button
+                id="saveDietBtn"
+                class="btn btn-success px-4">
+
+                <i class="bi bi-bookmark me-2"></i>
+
+                Save Diet Plan
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Diet JS -->
+
+<script src="js/diet.js"></script>
+<script src="js/theme.js"></script>
+
+
+</body>
+
+</html>

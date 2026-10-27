@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Water Tracker - AI Smart Wellness</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold text-success"
+           href="dashboard.html">
+
+            <i class="bi bi-heart-pulse"></i>
+
+            AI Smart Wellness
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="diet.html">
+                        Diet Plan
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="reminders.html">
+                        Reminders
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="water.html">
+                        Water
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="history.html">
+                        History
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- WATER TRACKER -->
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+
+        <!-- HEADER -->
+
+        <div class="mb-4">
+
+            <span class="badge bg-success-subtle text-success">
+
+                <i class="bi bi-droplet"></i>
+
+                Daily Hydration
+
+            </span>
+
+
+            <h2 class="fw-bold mt-2">
+
+                Water Tracker 💧
+
+            </h2>
+
+
+            <p class="text-muted">
+
+                Keep yourself hydrated throughout the day.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- MAIN CARD -->
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-7">
+
+                <div class="dashboard-card text-center">
+
+
+                    <div class="water-tracker-icon">
+
+                        <i class="bi bi-droplet-fill"></i>
+
+                    </div>
+
+
+                    <h1 class="fw-bold mt-3">
+
+                        <span id="waterCount">0</span>
+
+                        / 8
+
+                    </h1>
+
+
+                    <p class="text-muted">
+
+                        Glasses of water today
+
+                    </p>
+
+
+
+                    <!-- PROGRESS -->
+
+                    <div class="progress mt-4"
+                         style="height: 20px;">
+
+                        <div
+                            id="waterProgress"
+                            class="progress-bar bg-success"
+                            role="progressbar"
+                            style="width: 0%;">
+
+                            0%
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        id="addWaterBtn"
+                        class="btn btn-success btn-lg mt-4 px-5">
+
+                        <i class="bi bi-plus-lg me-2"></i>
+
+                        Add One Glass
+
+                    </button>
+
+
+                    <br>
+
+
+                    <button
+                        id="resetWaterBtn"
+                        class="btn btn-outline-danger mt-3">
+
+                        <i class="bi bi-arrow-counterclockwise me-2"></i>
+
+                        Reset Today
+
+                    </button>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div id="waterMessage"
+                         class="mt-4">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- WATER TIPS -->
+
+        <div class="dashboard-card mt-4">
+
+            <h5 class="fw-bold mb-4">
+
+                <i class="bi bi-lightbulb text-success me-2"></i>
+
+                Hydration Tips
+
+            </h5>
+
+
+            <div class="row g-3">
+
+
+                <div class="col-md-4">
+
+                    <div class="tip-item">
+
+                        <i class="bi bi-droplet"></i>
+
+                        <div>
+
+                            <strong>
+                                Drink Regularly
+                            </strong>
+
+                            <p>
+                                Drink water throughout the day
+                                instead of waiting until thirsty.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="tip-item">
+
+                        <i class="bi bi-cup-straw"></i>
+
+                        <div>
+
+                            <strong>
+                                Start Your Day
+                            </strong>
+
+                            <p>
+                                Begin your morning with a glass
+                                of water.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="tip-item">
+
+                        <i class="bi bi-person-walking"></i>
+
+                        <div>
+
+                            <strong>
+                                During Exercise
+                            </strong>
+
+                            <p>
+                                Increase fluid intake during
+                                physical activity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="js/water.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>
